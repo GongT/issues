@@ -1,0 +1,8 @@
+{
+	"name": "debug",
+	"version": "9.9.9",
+	"main": "index.js",
+	"license": "MIT",
+	"dependencies": {
+	}
+}

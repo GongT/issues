@@ -1,0 +1,58 @@
+dependencies:
+  '@rush-temp/debug': 'file:projects/debug.tgz'
+  '@rush-temp/some-not-exists-package': 'file:projects/some-not-exists-package.tgz'
+  '@rush-temp/test': 'file:projects/test.tgz'
+  '@rush-temp/test2': 'file:projects/test2.tgz'
+  debug: 4.1.1
+packages:
+  /debug/4.1.1:
+    dependencies:
+      ms: 2.1.2
+    dev: false
+    resolution:
+      integrity: sha512-pYAIzeRo8J6KPEaJ0VWOh5Pzkbw/RetuzehGM7QRRX5he4fPHx2rdKMB256ehJCkX+XRQm16eZLqLNS8RSZXZw==
+  /ms/2.1.2:
+    dev: false
+    resolution:
+      integrity: sha512-sGkPx+VjMtmA6MX27oA4FBFELFCZZ4S4XqeGOXCv68tT+jb3vk/RyaKWP0PTKyWtmLSM0b+adUTEvbs1PEaH2w==
+  'file:projects/debug.tgz':
+    dev: false
+    name: '@rush-temp/debug'
+    resolution:
+      integrity: sha512-8Oyj4kF1EryiEunKXjjHV3yzGqpae48kTaqXTuWA/rZlycrIH0zHUtjBaaqbPTUnzION7S4w8Zz1I48x0QQHPQ==
+      tarball: 'file:projects/debug.tgz'
+    version: 0.0.0
+  'file:projects/some-not-exists-package.tgz':
+    dev: false
+    name: '@rush-temp/some-not-exists-package'
+    resolution:
+      integrity: sha512-0/iqQMyo3a61soUYc8nhiruaRWHjbMMgcAgt9f9qT0WnbdfKTWVvT4rZZ1zsFdJv/5DG9ZPYq78jc1xAWt5Otw==
+      tarball: 'file:projects/some-not-exists-package.tgz'
+    version: 0.0.0
+  'file:projects/test.tgz':
+    dependencies:
+      debug: 4.1.1
+    dev: false
+    name: '@rush-temp/test'
+    resolution:
+      integrity: sha512-z2cgG4QVNTcu5TXLZNgfm0RmEXapF3bakVI3aXtPDd0QL79Q8Dnb7Gm32bLrjVg0vt/yWlIGnEA5zYeFcM+jXw==
+      tarball: 'file:projects/test.tgz'
+    version: 0.0.0
+  'file:projects/test2.tgz':
+    dependencies:
+      debug: 4.1.1
+    dev: false
+    name: '@rush-temp/test2'
+    resolution:
+      integrity: sha512-dxFJlrXheLfjBPoh1DuMS3ljXL7iuK3i6v/Kj8YIoa0EzQ7CEcNnFj9DvWRkr7yFhO7ON3MSTmT+GcJlR1eyMQ==
+      tarball: 'file:projects/test2.tgz'
+    version: 0.0.0
+registry: 'https://registry.npmjs.org/'
+shrinkwrapMinorVersion: 9
+shrinkwrapVersion: 3
+specifiers:
+  '@rush-temp/debug': 'file:./projects/debug.tgz'
+  '@rush-temp/some-not-exists-package': 'file:./projects/some-not-exists-package.tgz'
+  '@rush-temp/test': 'file:./projects/test.tgz'
+  '@rush-temp/test2': 'file:./projects/test2.tgz'
+  debug: ^4.1.1
