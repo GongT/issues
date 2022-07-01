@@ -7,7 +7,7 @@ import { Model } from 'mongoose';
 export class AppService {
   constructor(
     @InjectModel('test')
-    private readonly modelsRunsModel: Model<DBTest>,
+    private readonly test: Model<DBTest>,
   ) {}
 
   getHello(): string {
