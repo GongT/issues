@@ -7,9 +7,12 @@ import { testSchema } from './app.model';
 @Module({
   imports: [
     MongooseModule.forRoot('mongodb://127.0.0.1:27017/nest', {
-      connectionName: 'cats', // work if no this line
+      connectionName: 'dogs',
     }),
-    MongooseModule.forFeature([{ name: 'test', schema: testSchema }], 'cats'), // work if no last arg
+    MongooseModule.forRoot('mongodb://127.0.0.1:27017/nest', {
+      connectionName: 'cats', // <<-- work if no this line
+    }),
+    MongooseModule.forFeature([{ name: 'test', schema: testSchema }], 'cats'), // <<-- work if no last arg
   ],
   controllers: [AppController],
   providers: [AppService],

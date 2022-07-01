@@ -6,6 +6,7 @@ import { Model } from 'mongoose';
 @Injectable()
 export class AppService {
   constructor(
+    // @InjectModel('catsConnection/test') // <<-- And this magically works
     @InjectModel('test')
     private readonly test: Model<DBTest>,
   ) {}
