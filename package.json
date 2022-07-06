@@ -1,0 +1,8 @@
+{
+	"name": "test",
+	"version": "0.0.0",
+	"dependencies": {
+		"@rushstack/heft": "^0.46.1",
+		"typescript": "<4.7"
+	}
+}

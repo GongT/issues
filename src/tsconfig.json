@@ -1,0 +1,10 @@
+{
+	"compilerOptions": {
+		"outDir": "../lib",
+		"module": "ESNext",
+		"noEmitOnError": true,
+		"strict": true,
+		"noUnusedLocals": true,
+		"noUnusedParameters": true
+	}
+}
