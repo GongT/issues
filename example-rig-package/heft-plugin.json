@@ -1,0 +1,14 @@
+{
+	"$schema": "https://developer.microsoft.com/json-schemas/heft/v0/heft-plugin.schema.json",
+
+	"taskPlugins": [
+		{
+			"pluginName": "plugin1",
+			"entryPoint": "./scripts/plugin1.js"
+		},
+		{
+			"pluginName": "plugin2",
+			"entryPoint": "./scripts/plugin2.js"
+		},
+	]
+}

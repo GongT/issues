@@ -1,0 +1,8 @@
+{
+	"name": "test-project",
+	"version": "0.0.0",
+	"dependencies": {
+		"@rushstack/heft": "^0.56.0",
+		"test-rig": "./example-rig-package"
+	}
+}

@@ -1,0 +1,21 @@
+{
+	"$schema": "https://developer.microsoft.com/json-schemas/heft/v0/heft.schema.json",
+	"aliasesByName": {},
+	"phasesByName": {
+		"pre-build": {
+			"tasksByName": {
+				"test-1": {
+					"taskPlugin": {
+						"pluginName": "plugin1",
+						"pluginPackage": "test-rig", // <-- current project
+						"options": {}
+					}
+				},
+			}
+		},
+		"build": {
+			"phaseDependencies": ["pre-build"]
+		}
+	},
+	"heftPlugins": []
+}

@@ -1,0 +1,7 @@
+{
+	"name": "test-rig",
+	"version": "0.0.0",
+	"dependencies": {
+		"@rushstack/heft": "^0.56.0"
+	}
+}
