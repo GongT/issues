@@ -1,0 +1,23 @@
+{
+	"files.associations": {
+		"*.json": "jsonc"
+	},
+	"search.exclude": {
+		"**/pnpm-lock.yaml": true,
+		"**/temp/**": true,
+		"**/node_modules/**/*": true,
+		"*/*/lib": true,
+		"*/*/.npmrc": true,
+		"common/autoinstallers/*/lib": true,
+		"*/*/.rush": true,
+		"**/*.api.json": true,
+		"**/*.api.md": true,
+		"**/package-public.d.ts": true
+	},
+	"[typescript]": {
+		"editor.defaultFormatter": "vscode.typescript-language-features"
+	},
+	"[jsonc]": {
+		"editor.defaultFormatter": "vscode.json-language-features"
+	}
+}
