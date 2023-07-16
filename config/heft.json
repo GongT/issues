@@ -1,0 +1,27 @@
+{
+	"$schema": "https://developer.microsoft.com/json-schemas/heft/v0/heft.schema.json",
+	"aliasesByName": {},
+	"phasesByName": {
+		"pre-build": {
+			"tasksByName": {
+				"generate-code": {
+					"taskPlugin": {
+						"pluginPackage": "test-1",
+						"pluginName": "generate-code"
+					}
+				}
+			}
+		},
+		"build": {
+			"phaseDependencies": ["pre-build"],
+			"tasksByName": {
+				"typescript": {
+					"taskPlugin": {
+						"pluginPackage": "@rushstack/heft-typescript-plugin",
+						"options": {}
+					}
+				}
+			}
+		}
+	}
+}

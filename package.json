@@ -1,0 +1,9 @@
+{
+	"name": "test-1",
+	"version": "0.0.0",
+	"devDependencies": {
+		"@rushstack/heft-typescript-plugin": "^0.1.16",
+		"typescript": "^5.1.6",
+		"@rushstack/heft": "^0.56.3"
+	}
+}
